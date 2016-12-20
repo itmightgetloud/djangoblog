@@ -26,7 +26,8 @@ SECRET_KEY = 'px_ae1c*zpuol8!x4jwx5&em*(%a0x*ofb=9&n++*n=gpff&o$'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'ksnopek.pythonanywhere.com'
+    'ksnopek.pythonanywhere.com',
+    '127.0.0.1'
 ]
 
 
@@ -42,12 +43,13 @@ INSTALLED_APPS = [
     'blog',
 ]
 
-MIDDLEWARE = [
+MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]

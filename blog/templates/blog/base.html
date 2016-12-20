@@ -15,7 +15,7 @@
 			<a href="{% url 'admin:index' %}" class="top-menu">{{request.user.username}}</a>
 			<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 		{% else %}
-			<a href="{% url 'post_list' %}" class="top-menu">Log In.</a>
+			<a href="{% url 'admin:index' %}" class="top-menu">Log In.</a>
 		{% endif %}
 		</div>
 		<div class="content container">

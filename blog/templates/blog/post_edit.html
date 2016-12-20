@@ -7,5 +7,7 @@
 		<button type="submit" class="save btn btn-default">Save</button>
 	</form>
 	<a class="btn btn-default" href="{% url 'post_list' %}"><span class="glyphicon glyphicon-home"></span></a>
+	{% if post %}
 	<a class="btn btn-default" href="{% url 'post_detail' pk=post.pk %}"><span class="glyphicon glyphicon-arrow-left"></span></a>
+	{% endif %}
 {% endblock %}
