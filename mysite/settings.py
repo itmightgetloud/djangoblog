@@ -25,7 +25,9 @@ SECRET_KEY = 'px_ae1c*zpuol8!x4jwx5&em*(%a0x*ofb=9&n++*n=gpff&o$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ksnopek.pythonanywhere.com'
+]
 
 
 # Application definition
